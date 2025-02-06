@@ -1,6 +1,6 @@
 import { isClerkAPIResponseError, useSignIn } from "@clerk/clerk-expo";
 import { Link, useRouter } from "expo-router";
-import { Text, TextInput, Button, View, StyleSheet } from "react-native";
+import { Text, TextInput, View, StyleSheet } from "react-native";
 import React from "react";
 import { InputStyle } from "../../styles/input";
 import { StyledButton } from "../../components/StyledButton";
@@ -90,7 +90,7 @@ export default function Page() {
       <View style={{ flexDirection: "row", gap: 4 }}>
         <Text>Pas encore inscrit ?</Text>
         <Link href="/sign-up">
-          <Text style={{ textDecorationLine: "underline" }}>Sign up</Text>
+          <Text style={{ textDecorationLine: "underline" }}>S'inscrire</Text>
         </Link>
       </View>
     </View>
